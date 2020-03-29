@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production' ? '../../' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/vue-demo/dist/' : '/',
     /* webpack-dev-server 相关配置 */
     devServer: {
         /* 自动打开浏览器 */
