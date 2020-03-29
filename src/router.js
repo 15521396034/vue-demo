@@ -13,11 +13,25 @@ const router = new VueRouter({
             children: [
                 {
                     path: '/',
+                    meta:{title: '首页'},
                     component: () => import('./pages/home.vue'),
+                },
+                {
+                    path: 'category',
+                    meta:{title: '分类'},
+                    component: () => import('./pages/category.vue'),
                 }
             ]
         }
     ]
-})
+});
 
-export default router
+router.beforeEach((to, from, next) => {
+    /* 路由发生变化修改页面title */
+    if (to.meta.title) {
+        document.title = to.meta.title
+    }
+    next()
+});
+
+export default router;

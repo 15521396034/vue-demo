@@ -25,7 +25,7 @@ export default {
     color: #323233;
     font-size: 14px;
     font-family: PingFang SC, 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f7f8fa;
+    background-color: #ffffff;
     -webkit-font-smoothing: antialiased;
   }
 /*#app {*/
